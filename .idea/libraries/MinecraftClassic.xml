@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MinecraftClassic">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../classicserver-rewritten/out/artifacts/MinecraftClassic_jar/MinecraftClassic.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

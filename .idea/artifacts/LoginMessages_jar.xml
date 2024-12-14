@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LoginMessages:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LoginMessages_jar</output-path>
+    <root id="archive" name="LoginMessages.jar">
+      <element id="module-output" name="LoginMessages" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../classicserver-rewritten/out/artifacts/MinecraftClassic_jar/MinecraftClassic.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

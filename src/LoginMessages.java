@@ -14,16 +14,20 @@ public class LoginMessages extends JavaPlugin {
     }
 
     @Override
-    public void onDisable() {
+    public void onDisable()
+    {
         super.onDisable();
+        EventRegistry.unregisterListener(this);
     }
 
+    @EventRegistry.EventHandler
     public void onPlayerJoin(PlayerJoinEvent event)
     {
         API.getInstance().broadcastMessage(ChatColors.YELLOW + "Welcome, " + ChatColors.AQUA + event.getPlayer().getUsername() + ChatColors.YELLOW + "!");
         //player.sendMessage(ChatColors.YELLOW + "You have logged into world: " + ChatColors.RED + player.getLevel().getName());
     }
 
+    @EventRegistry.EventHandler
     public void onPlayerDisconnect(PlayerDisconnectEvent event)
     {
         API.getInstance().broadcastMessage(ChatColors.YELLOW + "Goodbye, " + ChatColors.AQUA + event.getPlayer().getUsername() + ChatColors.YELLOW + "!");
